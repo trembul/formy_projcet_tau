@@ -12,7 +12,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp(){
-        System.setProperty("webdriver.chorme.driver", "resources/webdriver.exe");
+        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://formy-project.herokuapp.com/");
 

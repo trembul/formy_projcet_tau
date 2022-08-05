@@ -12,4 +12,9 @@ public class HomePage {
         this.driver = driver;
     }
 
+    public FormPage clickFormPage(){
+        driver.findElement(completeWebFormLink).click();
+        return new FormPage(driver);
+    }
+
 }
