@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import java.util.concurrent.TimeUnit;
+
 public class BaseTest {
     private WebDriver driver;
     protected HomePage homePage;
@@ -17,6 +19,7 @@ public class BaseTest {
         driver.get("https://formy-project.herokuapp.com/");
 
         homePage = new HomePage(driver);
+
     }
 
     @AfterClass
